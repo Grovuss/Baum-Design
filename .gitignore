@@ -1,0 +1,10 @@
+# Editor and tool settings: keep them on this computer, not on the website
+.claude/
+.impeccable/
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini

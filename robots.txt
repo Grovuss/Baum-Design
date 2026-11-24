@@ -1,0 +1,3 @@
+# Search engines may index the whole site.
+User-agent: *
+Allow: /
