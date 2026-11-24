@@ -6,12 +6,24 @@
   <title>Page not found — Baum Design</title>
   <meta name="robots" content="noindex" />
   <meta name="theme-color" content="#F0EEE7" />
-  <!-- Paths start with "/" because this page is shown for any missing URL,
-       however deep (e.g. /old/page). -->
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/css/fonts.css" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- This page is shown for any missing URL, however deep (e.g. /old/page),
+       so every link below is resolved from the site's root, set here:
+       on github.io the site lives in a folder named after the repository
+       (/Baum-Design/); on your own domain it's simply "/". -->
+  <script>
+    (function () {
+      var root = "/";
+      if (/\.github\.io$/.test(location.hostname)) {
+        var first = location.pathname.split("/")[1];
+        if (first) root = "/" + first + "/";
+      }
+      document.write('<base href="' + root + '">');
+    })();
+  </script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <style>
     body { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
     .notfound { flex: 1; display: flex; align-items: center; }
@@ -23,8 +35,8 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" aria-label="Baum Design — home">
-        <img class="brand-mark" src="/assets/logo.svg" alt="" />
+      <a class="brand" href="./" aria-label="Baum Design — home">
+        <img class="brand-mark" src="assets/logo.svg" alt="" />
         <span class="brand-name">Baum Design</span>
       </a>
     </div>
@@ -37,8 +49,8 @@
         <h1 class="hero-title">Nothing’s <span class="accent">growing here.</span></h1>
         <p class="hero-lede">The page you’re looking for has moved, or never existed. Let’s get you back on track.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/">Back to home</a>
-          <a class="btn btn-ghost" href="/#contact">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-primary" href="./">Back to home</a>
+          <a class="btn btn-ghost" href="./#contact">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
