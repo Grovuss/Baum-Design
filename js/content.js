@@ -131,7 +131,7 @@ window.SITE = {
       {
         name: "The Starter",
         label: "Entry level",
-        price: "$175",
+        price: "$135",
         blurb: "For businesses that need a professional first impression.",
         features: [
           "One-page website",
@@ -140,12 +140,12 @@ window.SITE = {
           "Mobile-friendly design",
           "Contact information and social links",
         ],
-        worth: "Worth $200+ separately",
+        worth: "Worth $150+ separately",
       },
       {
         name: "Business Essentials",
         label: "Recommended",
-        price: "$395",
+        price: "$350",
         blurb: "For small businesses ready to establish themselves online.",
         features: [
           "Up to 3-page custom website",
@@ -156,7 +156,7 @@ window.SITE = {
           "Social media profile graphics",
           "Basic SEO setup",
         ],
-        worth: "Worth $450+ separately",
+        worth: "Worth $400+ separately",
         featured: true,
       },
       {
@@ -180,7 +180,7 @@ window.SITE = {
       {
         name: "The Full Brand",
         label: "All-in-one",
-        price: "$995",
+        price: "$895",
         pricePrefix: "from",
         blurb: "A complete brand and online presence, handled in one project.",
         features: [
@@ -196,7 +196,7 @@ window.SITE = {
           "Google Maps / relevant integrations",
           "30 days of post-launch support",
         ],
-        worth: "Worth $1,100+ separately",
+        worth: "Worth $1,000+ separately",
       },
     ],
 
@@ -208,17 +208,17 @@ window.SITE = {
       },
       {
         name: "Print Starter",
-        price: "$125",
+        price: "$95",
         features: ["Business card design", "Flyer design", "One promotional graphic", "Print-ready exports"],
       },
       {
         name: "Online Presence",
-        price: "$225",
+        price: "$185",
         features: ["One-page website", "Contact form", "Google Maps and social links", "Basic SEO and mobile optimization"],
       },
       {
         name: "Brand Refresh",
-        price: "$225",
+        price: "$150",
         features: ["Logo redesign", "Updated color palette", "Typography selection", "2 logo variations", "Social media profile assets"],
       },
     ],
@@ -231,15 +231,16 @@ window.SITE = {
           ["Basic website", "from $250", "Up to 3 pages: home, about, contact, or similar."],
           ["Business website", "from $500", "Up to 5 pages, custom design, responsive layout, contact form."],
           ["Full website", "from $800", "5+ pages, more complex functionality, integrations, custom features."],
-          ["Website redesign", "from $100", "A fresh look and better usability for an existing site."],
+          ["Website redesign", "from $200", "A fresh look and better usability for an existing site."],
         ],
       },
       {
         tab: "Branding",
         items: [
-          ["Basic logo", "$100", "Custom logo design with final export files."],
-          ["Logo package", "from $175", "Primary logo, alternate logo, icon, color variations."],
-          ["Brand identity", "from $300", "Logo system, color palette, typography, brand guide, visual direction."],
+          ["Basic logo", "$50", "Custom logo design with final export files."],
+          ["Logo variation", "$10 each", "An alternate layout, icon, or color version of your logo."],
+          ["Logo package", "from $90", "Primary logo, alternate logo, icon, and 2 color variations."],
+          ["Brand identity", "from $250", "Logo system, color palette, typography, brand guide, visual direction."],
         ],
       },
       {
@@ -267,9 +268,9 @@ window.SITE = {
           ["Photo gallery", "from $50"],
           ["Menu / service catalog", "from $50"],
           ["Basic SEO setup", "from $50"],
-          ["Website copywriting", "from $50"],
+          ["Website copywriting", "$50 per page"],
           ["Custom functionality", "from $100"],
-          ["Online store setup", "from $250"],
+          ["Online store setup", "from $600"],
         ],
       },
       {
@@ -286,7 +287,7 @@ window.SITE = {
     ],
 
     footnote:
-      "Prices are starting points for typical projects. Every project starts with a quick chat, and you’ll get a clear quote before any work begins.",
+      "Prices are starting points for typical projects. Every project starts with a quick chat, and you’ll get a clear quote before any work begins. A 50% deposit starts the work and the rest is due at launch. Two rounds of revisions are included; more are $50/hr.",
   },
 
   /* ------------------------------------------------------------------------
