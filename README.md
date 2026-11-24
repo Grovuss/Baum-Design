@@ -28,7 +28,7 @@ assets/           logo.svg, favicon.svg, apple-touch-icon.png (home-screen icon)
 That's all. The form sends `name`, `email`, `business`, `looking_for` and `message`, plus a `_gotcha` honeypot field that catches spam. Until an endpoint is set, submitting shows a message pointing visitors to your email.
 
 ## Link previews
-`assets/og-image.png` (1200×630) is the card that shows when someone shares your link. Once you have a domain, change `og:image` and `twitter:image` in `index.html` to the full URL (e.g. `https://yourdomain.com/assets/og-image.png`). Most apps ignore relative paths.
+`assets/og-image.png` (1200×630) is the card that shows when someone shares your link. The tags in `index.html` use full URLs on `https://grovuss.github.io/Baum-Design` (most apps ignore relative paths). If you move to your own domain, replace that address in `og:url`, `og:image` and `twitter:image`.
 
 ## Previewing locally
 ```
@@ -37,4 +37,10 @@ python -m http.server 5173
 Then open http://localhost:5173.
 
 ## Deploying
-Upload the folder as-is to Netlify (drag and drop), Vercel, Cloudflare Pages or GitHub Pages. None of them need build settings.
+The site is hosted on GitHub Pages from the `main` branch of github.com/Grovuss/Baum-Design and lives at https://grovuss.github.io/Baum-Design/. To update it, commit your changes and push:
+```
+git add -A
+git commit -m "Describe the change"
+git push
+```
+Pages republishes within a minute or two. There are no build settings. `.nojekyll` tells Pages to serve the files as they are, and `.gitignore` keeps editor settings out of the repository.
